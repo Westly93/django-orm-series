@@ -1,0 +1,7 @@
+{% extends 'base.html' %} {% block content %}
+
+<!---->
+{% for restaurant in restaurants %}
+<a href="{{restaurant.get_absolute_url }}">{{ restaurant.name }}</a>
+<br />
+{% endfor %} {% endblock %}
